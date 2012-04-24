@@ -16,8 +16,8 @@ augroup filetypedetect
   " Factor files
   au! BufNewFile,BufRead *.factor setf factor
 
-  " Fish functions
-  au! BufNewFile,BufRead *.fish setf fish
+  " Go files
+  au! BufNewFile,BufRead *.go setf go
 
   " Haml xHTML Abstraction Markup Language
   au! BufNewFile,BufRead *.haml setf haml
@@ -28,9 +28,6 @@ augroup filetypedetect
   " Io programming language
   au! BufNewFile,BufRead *.io setf io
 
-  " Irssi logs
-  au BufRead,BufNewFile */irclogs*.log setf irssi
-
   " JSON
   au! BufNewFile,BufRead *.json setf javascript
 
@@ -38,7 +35,7 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.markdown,*.md setf markdown
 
   " Mote files
-  au! BufNewFile,BufRead *.mote setf mote
+  au! BufNewFile,BufRead *.mote,*.html setf mote
 
   " Mouse files
   au! BufNewFile,BufRead *.mo setf mouse
@@ -60,6 +57,9 @@ augroup filetypedetect
 
   " Ruby files
   au! BufNewFile,BufRead *.thor,Thorfile,Rakefile,Vagrantfile setf ruby
+
+  " Rust files
+  au! BufNewFile,BufRead *.rs setf rust
 
   " Sass files
   au! BufNewFile,BufRead *.sass setf sass

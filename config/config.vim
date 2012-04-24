@@ -4,6 +4,9 @@ filetype on
 filetype indent on
 filetype plugin on
 
+" Add trailing eol
+set eol
+
 " Color
 set background=dark
 color resistor
@@ -49,6 +52,8 @@ set fileencoding=utf-8
 " Show tabs and trailing spaces (toggle with F11; remove with S-F11)
 set listchars=tab:⏤⇢,trail:⇢
 set list
+
+" Autocomplete settings.
 set complete=.,w,b,u
 
 " Change file expansion to mimic shell behavior
@@ -63,14 +68,14 @@ endif
 " Case insensitive, incremental search, manual folds, etc.
 set iminsert=0
 set gdefault
-set ignorecase
+" set ignorecase
 set smartcase
 set foldmethod=manual
 set number
 set incsearch
 set nohlsearch
 set ruler
-set textwidth=79
+set textwidth=70
 set formatoptions+=t
 set showmatch
 set matchtime=1

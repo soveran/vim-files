@@ -2,7 +2,7 @@ set t_Co=256
 " highlight Normal ctermfg=White ctermbg=Black
 highlight Number                ctermfg=White     ctermbg=Black
 highlight LineNr                ctermfg=DarkGray  ctermbg=Black
-highlight Folded                ctermfg=DarkBlue  ctermbg=Black
+highlight Folded                ctermfg=DarkGray  ctermbg=Black
 highlight Keyword               ctermfg=202
 highlight Define                ctermfg=202
 highlight Comment               ctermfg=DarkGray

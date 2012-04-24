@@ -1,7 +1,6 @@
 set et
 set sw=2
 set ts=2
-set tw=79
 set fo+=t
 
 " Ruby
