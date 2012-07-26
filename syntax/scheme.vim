@@ -60,7 +60,7 @@ else
 endif
 
 syn keyword schemeSyntax lambda and or if cond case define let let* letrec
-syn keyword schemeSyntax begin do delay set! else =>
+syn keyword schemeSyntax begin do delay set! else => force
 syn keyword schemeSyntax quote quasiquote unquote unquote-splicing
 syn keyword schemeSyntax define-syntax let-syntax letrec-syntax syntax-rules
 "
@@ -162,11 +162,14 @@ syn match  schemeError  oneline    !#[tf][^ \t\[\]()";]\+!
 
 syn match  schemeChar  oneline    "#\\"
 syn match  schemeChar  oneline    "#\\."
-syn match schemeError  oneline    !#\\.[^ \t\[\]()";]\+!
+syn match  schemeError  oneline    !#\\.[^ \t\[\]()";]\+!
 syn match  schemeChar  oneline    "#\\space"
 syn match  schemeError  oneline    !#\\space[^ \t\[\]()";]\+!
 syn match  schemeChar  oneline    "#\\newline"
 syn match  schemeError  oneline    !#\\newline[^ \t\[\]()";]\+!
+
+" Shebang
+syn match  schemeShebang           /^#!.*/
 
 if exists("b:is_mzscheme") || exists("is_mzscheme")
     " MzScheme extensions
@@ -287,6 +290,7 @@ hi link schemeError    Error
 
 hi link schemeExtSyntax  Type
 hi link schemeExtFunc    PreProc
+hi link schemeShebang    PreProc
 
 " Added by Michel Martens
 hi link imapPlaceholder Debug
