@@ -24,7 +24,7 @@ highlight NonText               ctermfg=DarkGray    ctermbg=Black
 highlight Visual                ctermfg=Gray        ctermbg=DarkRed
 highlight TabLine               ctermfg=Black       ctermbg=Gray        cterm=bold
 highlight TabLineFill           ctermfg=Black       ctermbg=DarkGray    cterm=bold
-highlight TabLineSel            ctermfg=Black       ctermbg=DarkGray    cterm=NONE
+highlight TabLineSel            ctermfg=Black       ctermbg=Red         cterm=NONE
 highlight StatusLine            ctermfg=DarkGray    ctermbg=White
 highlight StatusLineNC          ctermfg=DarkGray    ctermbg=Black
 highlight CursorLine                                ctermbg=NONE        cterm=NONE
