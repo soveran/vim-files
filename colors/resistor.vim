@@ -18,7 +18,7 @@ highlight Statement             ctermfg=DarkRed     ctermbg=Black
 highlight String                ctermfg=DarkGreen   ctermbg=Black
 highlight Search                                    ctermbg=White
 highlight Todo                  ctermfg=Yellow      ctermbg=Black
-highlight Title                 ctermfg=Yellow      ctermbg=Black
+highlight Title                 ctermfg=White       ctermbg=NONE
 highlight ModeMsg               ctermfg=White       ctermbg=DarkGreen
 highlight NonText               ctermfg=DarkGray    ctermbg=Black
 highlight Visual                ctermfg=Gray        ctermbg=DarkRed
