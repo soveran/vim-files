@@ -81,7 +81,7 @@ imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
 " Open file in new tab
-nmap <C-O> :tabe 
+nmap <C-O> :tabf 
 
 nmap <silent> <C-w>. <C-w>_
 
