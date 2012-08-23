@@ -4,6 +4,9 @@ filetype on
 filetype indent on
 filetype plugin on
 
+" Path
+set path=.,,**
+
 " Add trailing eol
 set eol
 
