@@ -74,7 +74,8 @@ set gdefault
 " set ignorecase
 set smartcase
 set foldmethod=manual
-set number
+set foldcolumn=1
+set nonumber
 set incsearch
 set nohlsearch
 set ruler

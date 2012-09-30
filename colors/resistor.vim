@@ -33,6 +33,7 @@ highlight PreProc               ctermfg=DarkYellow  ctermbg=Black
 highlight Special               ctermfg=DarkYellow  ctermbg=Black
 highlight Delimiter             ctermfg=Gray        ctermbg=Black
 highlight VertSplit             ctermfg=DarkGray    ctermbg=DarkGray
+highlight FoldColumn            ctermfg=NONE        ctermbg=NONE
 
 
 " Ruby specific.
