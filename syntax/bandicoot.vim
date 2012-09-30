@@ -91,7 +91,7 @@ syn region  rcFnBody     matchgroup=rcFunction    start="{"         end="}"    c
 "Built-in Commands
 """"""""""""""""""
 " Todo: only at the beginning of the command
-syn keyword rcBuiltinKeyword skipwhite nextgroup=extend fn int long project real rel rename return select string summary
+syn keyword rcBuiltinKeyword skipwhite nextgroup=extend fn int long project real type var rename return select string summary
 
 "Errors
 """""""
