@@ -2,7 +2,8 @@ set t_Co=256
 " highlight Normal ctermfg=White ctermbg=Black
 " highlight Character             ctermfg=Red         ctermbg=Blue
 " highlight Boolean               ctermfg=Red         ctermbg=Blue
-" highlight Error                 ctermfg=Red         ctermbg=Blue
+highlight ExtraWhitespace       ctermfg=Red         ctermbg=Red
+highlight Error                 ctermfg=Red         ctermbg=Black
 highlight Number                ctermfg=White       ctermbg=Black
 highlight LineNr                ctermfg=DarkGray    ctermbg=Black
 highlight Folded                ctermfg=DarkGray    ctermbg=Black
@@ -43,3 +44,6 @@ highlight rubyStringDelimiter   ctermfg=DarkGreen
 highlight rubyInstanceVariable  ctermfg=66
 highlight rubyInterpolation     ctermfg=White
 highlight rubyPseudoVariable    ctermfg=66
+
+" Match trailing whitespaces except when typing at the end of a line.
+match ExtraWhitespace /\s\+\%#\@<!$/
