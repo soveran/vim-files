@@ -35,7 +35,7 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.markdown,*.md setf markdown
 
   " Mote files
-  au! BufNewFile,BufRead *.mote,*.html setf mote
+  au! BufNewFile,BufRead *.mote setf mote
 
   " Mouse files
   au! BufNewFile,BufRead *.mo setf mouse
@@ -68,7 +68,7 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.s setf shiny
 
   " Taskpaper files
-  au! BufNewFile,BufRead *.taskpaper setf taskpaper
+  au! BufNewFile,BufRead *.taskpaper,*.t,todo setf taskpaper
 
   " AsciiDoc
   au! BufNewFile,BufRead *.txt setf asciidoc
