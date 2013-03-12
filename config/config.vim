@@ -52,10 +52,6 @@ set noswapfile
 set encoding=utf-8
 set fileencoding=utf-8
 
-" Show tabs and trailing spaces (toggle with F11; remove with S-F11)
-set listchars=tab:⏤⇢,trail:⇢
-set list
-
 " Autocomplete settings.
 set complete=.,w,b,u
 
@@ -63,15 +59,9 @@ set complete=.,w,b,u
 set wildmenu
 set wildmode=list:longest
 
-" Fool Vim in case I'm running Fish shell
-if $SHELL =~ 'bin/fish'
-  set shell=/bin/sh
-endif
-
 " Case insensitive, incremental search, manual folds, etc.
 set iminsert=0
 set gdefault
-" set ignorecase
 set smartcase
 set foldmethod=manual
 set foldcolumn=1
