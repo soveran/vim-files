@@ -1,9 +1,13 @@
-" Open scratch files for Ruby (F1) and Mo (S-F1)
+" Open scratch file for Ruby (F1)
 map <F1> :tabnew /tmp/sample.rb<CR>:tabm 0<CR>
 imap <F1> <ESC>:tabnew /tmp/sample.rb<CR>:tabm 0<CR>
 
-" Source current file
-map <F2> :source %<CR>
+" Open scratch file
+map <F2> :tabnew /tmp/scratch<CR>:tabm 0<CR>
+imap <F2> <ESC>:tabnew /tmp/scratch<CR>:tabm 0<CR>
+
+" Use C-C as ESC in insert mode.
+inoremap <C-C> <ESC>
 
 " Open tasks
 map <F3> :tabnew $HOME/.taskpaper<CR>:tabm 0<CR>
@@ -13,8 +17,9 @@ map <F4> <ESC>:set spell!<CR>
 imap <F4> <ESC>:set spell!<CR>
 
 " Format selection with par
-vnoremap <F8> :!par 70<CR>
-vnoremap + :!par 70<CR>
+vnoremap <F8> :!par 70 -s0<CR>
+vnoremap + :!par 70 -s0<CR>
+vnoremap _ :!par 66 -s0<CR>
 
 " Toggle search highlight
 map <F10> :set hlsearch!<CR>
@@ -38,7 +43,7 @@ map gF :w! /tmp/spec.results<CR><C-W>gF<CR>
 map ' `
 
 " Mimic command line editing
-map <C-K> <ESC>d$
+map <C-K> <ESC>:!
 map <C-U> <ESC>d0
 imap <C-A> <ESC>0i
 imap <C-E> <ESC>$a
@@ -81,7 +86,7 @@ imap <C-L> <ESC>la
 imap <C-H> <ESC>ha
 
 " Open file in new tab
-nmap <C-O> :tabf 
+nmap <C-O> :tabe 
 
 nmap <silent> <C-w>. <C-w>_
 
