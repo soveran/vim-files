@@ -33,6 +33,7 @@ set tabstop=4
 set shiftwidth=4
 set noexpandtab
 set nolist
+set textwidth=70
 
 if !exists("go_highlight_array_whitespace_error")
   let go_highlight_array_whitespace_error = 1

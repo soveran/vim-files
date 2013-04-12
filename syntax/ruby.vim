@@ -10,6 +10,8 @@
 " Thanks to perl.vim authors, and to Reimer Behrends. :-) (MN)
 " ----------------------------------------------------------------------------
 
+set textwidth=70
+
 if exists("b:current_syntax")
   finish
 endif
