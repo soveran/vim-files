@@ -1,10 +1,10 @@
 " Open scratch file for Ruby (F1)
-map <F1> :tabnew /tmp/sample.rb<CR>:tabm 0<CR>
-imap <F1> <ESC>:tabnew /tmp/sample.rb<CR>:tabm 0<CR>
+map <F1> :e /tmp/sample.rb<CR>:tabm 0<CR>
+imap <F1> <ESC>:e /tmp/sample.rb<CR>:tabm 0<CR>
 
 " Open scratch file
-map <F2> :tabnew /tmp/scratch<CR>:tabm 0<CR>
-imap <F2> <ESC>:tabnew /tmp/scratch<CR>:tabm 0<CR>
+map <F2> :e /tmp/scratch<CR>:tabm 0<CR>
+imap <F2> <ESC>:e /tmp/scratch<CR>:tabm 0<CR>
 
 " Use C-C as ESC in insert mode.
 inoremap <C-C> <ESC>
