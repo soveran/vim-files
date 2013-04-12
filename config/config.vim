@@ -69,7 +69,7 @@ set nonumber
 set incsearch
 set nohlsearch
 set ruler
-set textwidth=70
+set textwidth=66
 set formatoptions+=t
 set showmatch
 set matchtime=1
