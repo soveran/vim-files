@@ -4,10 +4,13 @@ imap <F1> <ESC>:e /tmp/sample.rb<CR>:tabm 0<CR>
 
 " Open scratch file
 map <F2> :e /tmp/scratch<CR>:tabm 0<CR>
-imap <F2> <ESC>:e /tmp/scratch<CR>:tabm 0<CR>
+imap <F2> <ESC>ggdG
 
 " Use C-C as ESC in insert mode.
 inoremap <C-C> <ESC>
+
+" Avoid closing windows with CTRL-W CTRL-C.
+noremap <C-w><C-c> <ESC>
 
 " Open tasks
 map <F3> :tabnew $HOME/.taskpaper<CR>:tabm 0<CR>
