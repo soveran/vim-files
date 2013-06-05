@@ -72,4 +72,7 @@ augroup filetypedetect
 
   " AsciiDoc
   au! BufNewFile,BufRead *.txt setf asciidoc
+
+	" States
+  au! BufNewFile,BufRead *.st setf states
 augroup END
