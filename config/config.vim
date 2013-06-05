@@ -4,6 +4,8 @@ filetype on
 filetype indent on
 filetype plugin on
 
+set ssop=buffers,curdir,folds,options,tabpages
+
 " Path
 set path=.,,**
 
@@ -25,7 +27,7 @@ set fillchars="vert:YXXY,fold:-"
 set spelllang=en_us
 
 " Tabs management
-set expandtab
+set noexpandtab
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
