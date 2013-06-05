@@ -7,9 +7,9 @@
 "
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
-if !exists("main_syntax")
-  let main_syntax = 'html'
-endif
+" if !exists("main_syntax")
+"   let main_syntax = 'html'
+" endif
 
 if version < 600
   syntax clear
@@ -17,16 +17,16 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-if !exists("main_syntax")
-  let main_syntax = "html"
-endif
+" if !exists("main_syntax")
+"   let main_syntax = "html"
+" endif
 
 " Source the html syntax file
-ru! syntax/html.vim
-unlet b:current_syntax
+" ru! syntax/html.vim
+" unlet b:current_syntax
 
 " Put the ruby syntax file in @rubyTop
-syn include @rubyTop syntax/ruby.vim
+" syn include @rubyTop syntax/ruby.vim
 
 " End keywords
 syn keyword moteEnd contained else elsif end
