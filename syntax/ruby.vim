@@ -11,6 +11,7 @@
 " ----------------------------------------------------------------------------
 
 set textwidth=70
+set expandtab
 
 if exists("b:current_syntax")
   finish
