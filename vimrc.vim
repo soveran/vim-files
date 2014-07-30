@@ -65,7 +65,6 @@ nmap <C-O> :tabe
 set t_Co=256
 
 " Colors
-hi TrailingWhitespace    ctermfg=Red         ctermbg=Red
 hi Comment               ctermfg=DarkGray    ctermbg=Black
 hi Todo                  ctermfg=Yellow      ctermbg=Black
 hi String                ctermfg=DarkGreen   ctermbg=Black
@@ -75,5 +74,5 @@ hi TabLineFill           ctermfg=Black       ctermbg=White    cterm=bold
 hi TabLineSel            ctermfg=White       ctermbg=Red      cterm=NONE
 hi Title                 ctermfg=White       ctermbg=NONE
 
-" Match trailing whitespaces except when typing at the end of a line.
+" Function to comment code
 source ~/.vim/commenter.vim
