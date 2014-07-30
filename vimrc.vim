@@ -64,15 +64,6 @@ nmap <C-O> :tabe
 
 set t_Co=256
 
-" Syntax highlight
-" syn keyword	Todo	contained TODO FIXME
-
-" syn match 	TrailingWhitespace /\s\+\%#\@<!$/
-" syn match	Comment	"^#.*" contains=Todo
-" syn match	Comment	"\s#.*"ms=s+1 contains=Todo
-" syn region	String	start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline
-" syn region	String	start=+'+ skip=+\\\\\|\\'+ end=+'+ oneline
-
 " Colors
 hi TrailingWhitespace    ctermfg=Red         ctermbg=Red
 hi Comment               ctermfg=DarkGray    ctermbg=Black
