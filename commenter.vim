@@ -1,4 +1,5 @@
 au! FileType c          let b:comment = '//'
+au! FileType conf       let b:comment = '#'
 au! FileType go         let b:comment = '//'
 au! FileType haml       let b:comment = '-# '
 au! FileType lua        let b:comment = '-- '

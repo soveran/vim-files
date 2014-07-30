@@ -17,11 +17,3 @@ Now clone this repository:
 In your `~/.vimrc` put this:
 
     source ~/.vim/vimrc.vim
-
-And in your `~/.gvimrc` put this:
-
-    source ~/.vim/gvimrc.vim
-
-You may want to explore the `~/.vim/config` directory to see what's
-included and `~/.vim/config/mappings.vim` to see how to use the
-available tools.

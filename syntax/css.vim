@@ -25,8 +25,8 @@ syn keyword cssTagName caption center cite code col colgroup dd del
 syn keyword cssTagName dfn dir div dl dt em fieldset font form frame
 syn keyword cssTagName frameset footer h1 h2 h3 h4 h5 h6 head header hr
 syn keyword cssTagName html img i iframe img input ins isindex kbd label
-syn keyword cssTagName legend li link map menu meta noframes noscript nav
-syn keyword cssTagName ol optgroup option p param pre q s samp script
+syn keyword cssTagName legend li link map mark menu meta noframes noscript
+syn keyword cssTagName nav ol optgroup option p param pre q s samp script
 syn keyword cssTagName section select small span strike strong style sub
 syn keyword cssTagName sup tbody td textarea tfoot th thead title tr tt
 syn keyword cssTagName ul u var
