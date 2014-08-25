@@ -33,6 +33,12 @@ augroup filetypedetect
   " Ruby
   au! BufNewFile,BufRead *.rb setf ruby
 
+  " States
+  au! BufNewFile,BufRead *.st setf conf
+
   " Taskpaper files
   au! BufNewFile,BufRead *.taskpaper,*.t,todo setf taskpaper
 augroup END
+
+" Trailing whitespace
+au BufEnter * :syn match TrailingWhitespace /\s\+$/

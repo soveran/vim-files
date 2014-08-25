@@ -42,7 +42,10 @@ map q <Nop>
 " Deactivate keyword lookup
 map K <Nop>
 
-" Use C-C as ESC in insert mode.
+" Deactivate marks in other files
+map ` <Nop>
+
+" Use C-C as ESC in insert mode
 inoremap <C-C> <ESC>
 
 inoremap <C-A> <HOME>
@@ -52,8 +55,8 @@ nmap <C-A> g0
 nmap <C-E> g$
 
 " Move between tabs
-map <C-H> :tabp<CR>
-map <C-L> :tabn<CR>
+map H :tabp<CR>
+map L :tabn<CR>
 
 " Movement mappings
 nmap j gj
@@ -62,17 +65,8 @@ nmap k gk
 " Open file in new tab
 nmap <C-O> :tabe 
 
-set t_Co=256
-
 " Colors
-hi Comment               ctermfg=DarkGray    ctermbg=Black
-hi Todo                  ctermfg=Yellow      ctermbg=Black
-hi String                ctermfg=DarkGreen   ctermbg=Black
-
-hi TabLine               ctermfg=Black       ctermbg=Gray     cterm=bold
-hi TabLineFill           ctermfg=Black       ctermbg=White    cterm=bold
-hi TabLineSel            ctermfg=White       ctermbg=Red      cterm=NONE
-hi Title                 ctermfg=White       ctermbg=NONE
+color soon
 
 " Function to comment code
 source ~/.vim/commenter.vim
