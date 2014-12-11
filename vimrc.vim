@@ -48,12 +48,6 @@ map ` <Nop>
 " Use C-C as ESC in insert mode
 inoremap <C-C> <ESC>
 
-inoremap <C-A> <HOME>
-inoremap <C-E> <END>
-
-nmap <C-A> g0
-nmap <C-E> g$
-
 " Move between tabs
 map H :tabp<CR>
 map L :tabn<CR>
