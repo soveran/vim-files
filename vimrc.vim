@@ -59,6 +59,12 @@ nmap k gk
 " Open file in new tab
 nmap <C-O> :tabe 
 
+" Delete with ^D and ^H
+imap <C-D> <ESC>lxi
+imap <C-H> <ESC><BS>lxi
+nmap <C-D> x
+nmap <C-H> <BS>x
+
 " Colors
 color soon
 
