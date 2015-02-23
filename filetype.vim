@@ -4,7 +4,7 @@ endif
 
 augroup filetypedetect
 
-  au! FileType css,html,ruby setlocal ai ts=2 sw=2 sts=2 et
+  au! FileType css,html,nim,ruby,wren setlocal ai ts=2 sw=2 sts=2 et
 
   " dc
   au! BufNewFile,BufRead *.dc setf dc
@@ -20,6 +20,12 @@ augroup filetypedetect
 
   " Mote files
   au! BufNewFile,BufRead *.mote setf mote
+
+  " Nim files
+  au! BufNewFile,BufRead *.nim setf nim
+
+  " Osh files
+  au! BufNewFile,BufRead *.osh setf sh
 
   " Prolog
   au! BufNewFile,BufRead *.pro setf prolog
@@ -38,6 +44,9 @@ augroup filetypedetect
 
   " Taskpaper files
   au! BufNewFile,BufRead *.taskpaper,*.t,todo setf taskpaper
+
+  " Wren files
+  au! BufNewFile,BufRead *.wren setf wren
 augroup END
 
 " Trailing whitespace
